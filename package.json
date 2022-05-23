@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-pages-durableo-object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx esbuild worker/index.ts --bundle --format=esm --outfile=dist/_worker.js",
+    "dev": "npx wrangler pages dev dist --do CONTER=CounterTs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.11.0",
+    "esbuild": "^0.14.39",
+    "wrangler": "^2.0.6"
+  }
+}
